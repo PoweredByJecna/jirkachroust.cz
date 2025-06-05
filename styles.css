@@ -1,0 +1,27 @@
+/*
+ * Custom CSS
+ */
+.profilImg {
+  width: 50%;
+  border-radius: 5px;
+}
+.imgSchools{
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
+.col-md-8 {
+  margin-top: 20px;
+}
+
+:root {
+  --bs-body-bg: var(--bs-gray-100);
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: blue;
+  border-radius: 50%;
+}
+
