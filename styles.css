@@ -1,6 +1,13 @@
 /*
  * Custom CSS
  */
+ @media (min-width: 768px) {
+  .custom-carousel-img {
+    max-width: 60%;
+  }
+}
+
+
 .profilImg {
   width: 50%;
   border-radius: 5px;
@@ -13,6 +20,7 @@
 .col-md-8 {
   margin-top: 20px;
 }
+
 
 :root {
   --bs-body-bg: var(--bs-gray-100);

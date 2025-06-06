@@ -24,7 +24,7 @@
             <li class="nav-item"><a class="nav-link" href="index.html#uvod">Domov</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#Kontakt">Kontakt</a></li>
             <li class="nav-item"><a class="nav-link" href="index.html#vzdelani">Vzdělání</a></li>
-            <li class="nav-item"><a class="nav-link" href="projectsIndex.html">Projekty</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#projects">Projekty</a></li>
             <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/ji%C5%99%C3%AD-chroust-4597a0321/">LinkedIn</a></li>
             <li class="nav-item"><a class="nav-link" href="https://github.com/PoweredByJecna">Github</a></li>
           </ul>
@@ -32,7 +32,7 @@
       </div>
     </nav>
 
-    <section id="uvod" class="py-5 bg-light" style="padding-top: 4em !important;">
+    <section id="uvod" class="py-5 bg-light" style="padding-top: 4em !important; padding-bottom: 0rem !important;">
       <div class="row align-items-center flex-column" style="--bs-gutter-x: 0rem;">
           
         <div class="row align-items-center flex-column">
@@ -49,6 +49,11 @@
               <li><strong>Infrastrukturní vrstva</strong> – zodpovídá za komunikaci s databází a externími systémy.</li>
               <li><strong>Prezentační vrstva</strong> – stará se o interakci s uživatelem a zobrazení dat.</li>
             </ul>
+            <div class="text-center my-4">
+              <div class="mx-auto" style="width: 70%;">
+                <img src="images/Clean-ArchitectureOnion.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="Clean Architecture Diagram">
+              </div>
+            </div>
             <p>
               Závislosti jsou směrovány výhradně <em>směrem k jádru aplikace</em>, tedy k doménové vrstvě, a veškerá komunikace probíhá přes rozhraní (<em>interfaces</em>). Díky tomu je projekt postaven na <strong>závislosti na abstrakci</strong> místo konkrétní implementace, což zvyšuje flexibilitu, rozšiřitelnost a testovatelnost celého systému.
             </p>
@@ -61,53 +66,52 @@
       </div>
     </section> 
   </section> 
-  <section id="galerie" class="py-5">
+  <section id="galerie" class="py-5" style="padding-bottom: 0rem !important;">
     <div class="container mt-5" style="margin-bottom: 3rem;">
       <div id="carouselGallery" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
         <div class="carousel-inner">
   
-          <!-- Obrázek 1 -->
           <div class="carousel-item active">
-            <img src="images/CleanArcitecture.png" class="d-bloc w-100 img-fluid" style="max-height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 1" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/CleanArcitecture.png">
+            <img src="images/CleanArcitecture.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="Clean architecture" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/CleanArcitecture.png">
           </div>
-  
-          <!-- Obrázek 2 -->
+
           <div class="carousel-item">
-            <img src="images/CleanArchitecture-onion.png" class="d-bloc w-100 img-fluid" style="max-height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 2" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/CleanArchitecture-onion.png">
-          </div>
-  
-          <!-- Další obrázky... -->
-          <div class="carousel-item">
-            <img src="images/Dashboard-dieslovani.png" class="d-bloc w-100 img-fluid" style="max-height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 3" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/dashboard-vstupyDA.png">
+            <img src="images/Dashboard-dieslovani.2.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="Dashboard pro dieslovani" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/Dashboard-dieslovani.2.png">
           </div>
   
           <div class="carousel-item">
-            <img src="images/dashboard-odstavky.png" class="d-block mx-auto img-fluid" style="height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 4" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/dashboard-odstavky.png">
+            <img src="images/Dashboard-odstavky.2.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="Dashboard pro odstavky" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/Dashboard-odstavky.2.png">
           </div>
   
           <div class="carousel-item">
-            <img src="images/pohotovosti.png" class="d-block mx-auto img-fluid" style="height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 5" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/pohotovosti.png">
+            <img src="images/pohotovosti.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="Pohotovosti" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/pohotovosti.png">
           </div>
   
           <div class="carousel-item">
-            <img src="images/ZapisPohotovosti.png" class="d-block mx-auto img-fluid" style="height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 6" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/ZapisPohotovosti.png">
+            <img src="images/ZapisPohotovosti.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="Zapis pohotovosti" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/ZapisPohotovosti.png">
           </div>
   
           <div class="carousel-item">
-            <img src="images/regiony.png" class="d-block mx-auto img-fluid" style="height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 7" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/regiony.png">
+            <img src="images/regiony.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="detail regionu" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/regiony.png">
           </div>
   
           <div class="carousel-item">
-            <img src="images/logy.png" class="d-block mx-auto img-fluid" style="height: 300px; object-fit: cover; cursor: pointer;"
-                 alt="Obrázek 8" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/logy.png">
+            <img src="images/logy.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="logy danného dieslovaní" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/logy.png">
           </div>
+
+          <div class="carousel-item">
+            <img src="images/DetailDieslovani.png" class="d-block img-fluid mx-auto custom-carousel-img" style="max-height: 600px; object-fit: cover; cursor: pointer;"
+                 alt="detail danného dieslovaní" data-bs-toggle="modal" data-bs-target="#imageModal" data-bs-image="images/DetailDieslovani.png">
+          </div>
+
+
         </div>
   
         <!-- Ovládací šipky -->
