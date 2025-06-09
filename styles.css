@@ -21,6 +21,11 @@
   margin-top: 20px;
 }
 
+.imgExperience {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+}
 
 :root {
   --bs-body-bg: var(--bs-gray-100);
