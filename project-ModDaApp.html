@@ -58,6 +58,11 @@
             <p>
               Závislosti jsou směrovány výhradně <em>směrem k jádru aplikace</em>, tedy k doménové vrstvě, a veškerá komunikace probíhá přes rozhraní (<em>interfaces</em>). Díky tomu je projekt postaven na <strong>závislosti na abstrakci</strong> místo konkrétní implementace, což zvyšuje flexibilitu, rozšiřitelnost a testovatelnost celého systému.
             </p>
+            <div class="text-center my-4">
+              <div class="mx-auto" style="width: 70%;">
+                <img src="images/Usecase.png" class="img-fluid" style="max-width: 100%; height: auto;" alt="Use case Diagram">
+              </div>
+            </div>
             <p>
               Aplikace slouží ke <strong>správě objednávek Diesel agregátů (DA)</strong> pro základnové stanice (BTS) a RSU po celé České republice. Uživatelé mohou zakládat tzv. <em>odstávky</em>, na jejichž základě aplikace vyhodnocuje, zda je nutné nasazení DA – přičemž se zohledňuje délka výpadku, klasifikace stanice, výdrž baterie nebo dostupnost záložních zdrojů. V případě potřeby je následně vytvořena objednávka u dodavatele operujícího v daném regionu a přiřazen technik, který má v daném čase pohotovost.
             </p>
